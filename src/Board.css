@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+.Board {
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #fff, -10px 0 40px #f0f, 10px 0 40px #0ff;
+}
+
+table tr:first-child td:first-child {
+  border-radius: 10px 0 0 0 !important;
+}
+table tr:first-child td:last-child {
+  border-radius: 0 10px 0 0 !important;
+}
+table tr:last-child td:first-child {
+  border-radius: 0 0 0 10px !important;
+}
+table tr:last-child td:last-child {
+  border-radius: 0 0 10px 0 !important;
+}
+
+:root {
+  --shadow-color: purple;
+  --shadow-color-light: white;
+}
+
+h1 {
+  /* margin: calc(50vh - 40px) auto 0 auto; */
+  margin-bottom: 0.5rem;
+  font-size: 100px;
+  text-transform: uppercase;
+  font-family: "Righteous", cursive;
+  font-weight: normal;
+  display: block;
+  height: auto;
+  text-align: center;
+}
+
+.logo-1 {
+  color: white;
+  animation: neon 3s infinite;
+}
+
+.logo-2 {
+  color: white;
+  animation: neon 3s infinite;
+}
+
+@keyframes neon {
+  0% {
+    text-shadow: -1px -1px 1px var(--shadow-color-light),
+      -1px 1px 1px var(--shadow-color-light),
+      1px -1px 1px var(--shadow-color-light),
+      1px 1px 1px var(--shadow-color-light), 0 0 3px var(--shadow-color-light),
+      0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
+      0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color),
+      0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color),
+      0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
+  }
+  50% {
+    text-shadow: -1px -1px 1px var(--shadow-color-light),
+      -1px 1px 1px var(--shadow-color-light),
+      1px -1px 1px var(--shadow-color-light),
+      1px 1px 1px var(--shadow-color-light), 0 0 5px var(--shadow-color-light),
+      0 0 15px var(--shadow-color-light), 0 0 25px var(--shadow-color-light),
+      0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color),
+      0 0 60px var(--shadow-color), 0 0 80px var(--shadow-color),
+      0 0 110px var(--shadow-color), 0 0 210px var(--shadow-color);
+  }
+  100% {
+    text-shadow: -1px -1px 1px var(--shadow-color-light),
+      -1px 1px 1px var(--shadow-color-light),
+      1px -1px 1px var(--shadow-color-light),
+      1px 1px 1px var(--shadow-color-light), 0 0 3px var(--shadow-color-light),
+      0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
+      0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color),
+      0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color),
+      0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
+  }
+}
